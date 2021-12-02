@@ -1,0 +1,28 @@
+.card{
+    padding: 5px;
+    margin: 25px 0px;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 5px;
+    width: 60vw;
+    text-align: center;
+
+}
+
+.float{
+    float:left;
+    font-size: 25px;
+}
+
+
+#icon-right{
+    margin-right: -250px;
+}
+
+#icon-left{
+    position:relative;
+    margin-left: 1%;
+}
+
+#center{
+    width: 100%;
+}
