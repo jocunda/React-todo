@@ -14,5 +14,10 @@ export default function CardList() {
             <span id="center" className="float">Hello</span>
             <MdOutlineDeleteOutline id="icon-right" className="float" />
         </div>
+        <div className="card">
+
+            <ImCheckboxChecked className="float" />
+
+        </div>
     </>
 };

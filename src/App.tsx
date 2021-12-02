@@ -8,7 +8,7 @@ export default function App() {
 
   return <>
     <div className="App">
-      <h1>To do List</h1>
+      <h1 className="title">To do List</h1>
       <div className="input-add">
         <input type="text"
           name="todoadd"
