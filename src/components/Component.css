@@ -13,8 +13,16 @@
 .float{
     float:left;
     font-size: 25px;
+    visibility: visible;
 }
 
+.hidden{
+    visibility: hidden;
+}
+.overstrike{
+    text-decoration: line-through;
+    text-decoration-color: rgb(255, 163, 163);
+}
 
 #icon-right{
     font-size: 30px;
@@ -23,6 +31,11 @@
 #icon-left{
     position:relative;
     margin-left: 1%;
+}
+
+#icon-left2{
+    margin-left: -2.5%;
+    z-index:2;
 }
 
 #center{
