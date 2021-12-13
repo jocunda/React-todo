@@ -10,7 +10,7 @@ export default function App() {
 
   const addTodo: AddTodo = newTodo => {
     if (newTodo !== "") {
-      setTodos([...todos, { text: newTodo, check: true }])
+      setTodos([...todos, { text: newTodo, check: false }])
     }
   }
 
