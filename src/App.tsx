@@ -24,10 +24,9 @@ export default function App() {
     setTodos(updateTodos)
   }
 
-  const delTodo: delTodo = selectedTodo => {
+  const delTodo: delTodo = () => {
     const newToDoItems = todos.filter(todo => todo.check === false)
     setTodos(newToDoItems)
-
   }
 
 
