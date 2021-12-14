@@ -7,10 +7,12 @@ import {
 interface TodoListProps {
     todos: Array<Todo>
     toogleComplete: ToogleComplete
+    delTodo: delTodo
 }
 
 
-export default function CardList({ todos, toogleComplete }: TodoListProps) {
+export default function CardList({ todos, toogleComplete, delTodo }: TodoListProps) {
+
 
     return <>
         {todos.map((todo) => (
@@ -22,7 +24,7 @@ export default function CardList({ todos, toogleComplete }: TodoListProps) {
                     checked={todo.check}
                 />
                 <span id="center" className={todo.check ? "float overstrike" : "float "}>{todo.text}</span>
-                <MdOutlineDeleteOutline id="icon-right" className="float" />
+                <MdOutlineDeleteOutline id="icon-right" className="float" onClick={() => delTodo(todo)} />
             </div>
         ))}
 

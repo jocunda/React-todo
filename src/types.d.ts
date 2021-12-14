@@ -6,3 +6,5 @@ type Todo = {
 }
 
 type ToogleComplete = (selectedTodo: Todo) => void;
+
+type delTodo = (selectedTodo: Todo) => void;

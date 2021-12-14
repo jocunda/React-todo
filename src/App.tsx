@@ -24,11 +24,19 @@ export default function App() {
     setTodos(updateTodos)
   }
 
+  const delTodo: delTodo = selectedTodo => {
+    const newToDoItems = todos.filter(todo => todo.check === false)
+    setTodos(newToDoItems)
+
+  }
+
+
+
   return <>
     <div className="App">
       <h1 className="title">To do List</h1>
       <CardForm addTodo={addTodo} />
-      <CardList todos={todos} toogleComplete={toogleComplete} />
+      <CardList todos={todos} toogleComplete={toogleComplete} delTodo={delTodo} />
     </div>
   </>
 };
