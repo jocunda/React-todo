@@ -16,6 +16,7 @@ export default function CardForm({ addTodo }: TodoFormProps) {
 
     function handleChange(e: ChangeEvent<HTMLInputElement>) {
         setNewTodo(e.target.value);
+        console.log(newTodo)
     }
 
     function handleSubmit(e: FormEvent<Element>) {
